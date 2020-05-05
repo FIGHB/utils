@@ -156,4 +156,12 @@ public class RegexTest {
         String str = "[CQ:at,qq=1272776156]".replaceAll("\\[CQ:at,qq=", "").replaceAll("]", "");
         System.out.println(str);
     }
+
+    @Test
+    public void test19() {
+        String regex = "(/\\*ADMIN-LOGIN-FONT-COLOR\\*/(.*?)/\\*ADMIN-LOGIN-FONT-SIZE\\*/)";
+        String str = ".admin-login{/*ADMIN-LOGIN-FONT-COLOR*/color:yellow;/*ADMIN-LOGIN-FONT-SIZE*/font-size:12px;}";
+        String subStr = str.replaceAll(regex, "/* ADMIN-LOGIN-FONT-COLOR */color:red;/* ADMIN-LOGIN-FONT-SIZE */");
+        System.out.println(subStr);
+    }
 }

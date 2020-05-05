@@ -5,7 +5,6 @@ import org.junit.jupiter.api.Test;
 
 import java.awt.Font;
 import java.io.File;
-import java.util.HashMap;
 
 /**
  * @author Li Rui
