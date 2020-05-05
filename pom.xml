@@ -72,6 +72,12 @@
             <artifactId>eip-admin-starter-common</artifactId>
             <version>2.0</version>
         </dependency>
+        <!-- redis连接 -->
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.9.0</version>
+        </dependency>
     </dependencies>
 
     <build>
